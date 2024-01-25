@@ -1,0 +1,45 @@
+\include{preamble}
+\usepackage{acronym}
+\usepackage[utf8]{inputenc}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{enumitem,kantlipsum}
+\usepackage{hyperref}
+\usepackage{float}
+\newcommand{\autoren}{Niklas Hess, Marco Nentwig, Christian Nguyen, Max Weixler}
+\newcommand{\titellang}{Management of Logistics Processes}
+\newcommand{\titelkurz}{}
+\newcommand{\ausgabe}{01}
+\newcommand{\ersteseite}{1}
+\newcommand{\ISSN}{2702-1734}
+\newcommand{\URN}{urn:nbn:de:gbv:xxxx-2020040601}
+\renewbibmacro*{prenote}{%
+  \iffieldundef{prenote}
+    {\printtext{cf.}%
+     \setunit{\prenotedelim}}
+    {\printfield{prenote}%
+     \setunit{\prenotedelim}}}
+
+\newcommand{\zusammenfassungde}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   }
+\newcommand{\schluesselworterde}{KW1, KW2, KW3}
+\newcommand{\zusammenfassungen}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   }
+\newcommand{\schluesselworteren}{KW1, KW2, KW3}
+\linespread{1.5}
+
+\begin{document}
+	\include{titlepage}
+	\renewcommand{\contentsname}{Contents}
+	\thispagestyle{plain}
+	\pagenumbering{roman}
+	\addcontentsline{toc}{section}{Table of Contents}
+	\tableofcontents
+	\include{Index}
+	\include{contents}
+	
+	\nocite{*}
+	\printbibliography[title = Literature]
+	\addcontentsline{toc}{section}{Literature}
+	
+	\include{dec_oath}
+	
+	
+\end{document}
